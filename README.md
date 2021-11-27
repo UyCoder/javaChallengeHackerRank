@@ -1,0 +1,2 @@
+# javaChallengeHackerRank
+HackerRank Challenge
