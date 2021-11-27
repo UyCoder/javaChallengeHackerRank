@@ -10,7 +10,6 @@ import java.io.InputStreamReader;
  * Created:     11/28/2021 01:07
  * Author:      Ahmed-UTI
  * Email:       AhmedBughra@gmail.com
- * LinkedIn:    https://www.linkedin.com/in/ahmed-bughra/
  * CreatedWith: IntelliJ IDEA
  */
 public class JavaLoops1 {

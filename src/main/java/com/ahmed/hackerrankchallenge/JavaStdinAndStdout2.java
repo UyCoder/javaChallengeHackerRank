@@ -8,7 +8,6 @@ import java.util.Scanner;
  * Created:     11/28/2021 00:39
  * Author:      Ahmed-UTI
  * Email:       AhmedBughra@gmail.com
- * LinkedIn:    https://www.linkedin.com/in/ahmed-bughra/
  * CreatedWith: IntelliJ IDEA
  */
 public class JavaStdinAndStdout2 {

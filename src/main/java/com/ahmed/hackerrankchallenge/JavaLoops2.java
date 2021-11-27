@@ -8,7 +8,6 @@ import java.util.Scanner;
  * Created:     11/28/2021 01:10
  * Author:      Ahmed-UTI
  * Email:       AhmedBughra@gmail.com
- * LinkedIn:    https://www.linkedin.com/in/ahmed-bughra/
  * CreatedWith: IntelliJ IDEA
  */
 public class JavaLoops2 {
