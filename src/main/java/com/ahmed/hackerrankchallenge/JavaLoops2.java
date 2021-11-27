@@ -12,7 +12,7 @@ import java.util.Scanner;
  * CreatedWith: IntelliJ IDEA
  */
 public class JavaLoops2 {
-    // ========================================== first soulution
+    // ==========================================  solution 1
 //    public static void main(String []argh){
 //        Scanner in = new Scanner(System.in);
 //        int t=in.nextInt();
@@ -25,8 +25,7 @@ public class JavaLoops2 {
 //    }
 
 
-
-    // ========================================== second soulution
+    // ==========================================  solution 2
 public static void main(String []argh){
     Scanner in = new Scanner(System.in);
     int t=in.nextInt();
