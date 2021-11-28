@@ -1,8 +1,9 @@
 package com.ahmed.hackerrankchallenge;
 
 import java.util.Arrays;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
-import java.util.regex.Pattern;
+import java.util.regex.*;
 
 /**
  * Project:     javaChallengeHackerRank
@@ -31,8 +32,8 @@ public class CoderByteChallenge1 {
                 }
                 return returnValue.toString().replaceAll("\\s+", "");
             }
-    // Second method will convert fisty letter to lower case
-    private static String firstCharToLowerCase(String str) {
+    // Second method will convert first letter to lower case
+    public static String firstCharToLowerCase(String str) {
         if(str == null || str.length() == 0)
             return "";
         if(str.length() == 1)
@@ -43,8 +44,7 @@ public class CoderByteChallenge1 {
     // Main method here..
     public static void main(String[] args) {
       Scanner scan = new Scanner(System.in);
-        String s = firstCharToLowerCase(convertToCamelCase(scan.nextLine()));
-        System.out.println(s);
+        System.out.println(firstCharToLowerCase(convertToCamelCase(scan.nextLine())));
         scan.close();
     }
 }

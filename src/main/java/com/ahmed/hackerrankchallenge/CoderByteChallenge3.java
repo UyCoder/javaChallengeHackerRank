@@ -11,19 +11,19 @@ import java.util.Scanner;
  * CreatedWith: IntelliJ IDEA
  */
 public class CoderByteChallenge3 {
-
-    public static String MathChallenge(int sayi) {
+    public static boolean MathChallenge(int sayi) {
         for (int i = 2; i < Math.sqrt(sayi); i++) {
             if (sayi % i == 0){
-                return "false";
+                return false;
             }
         }
-        return "true";
+        return true;
     }
 
     public static void main (String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.print(MathChallenge(scan.nextInt()));
+        // keep this function call here
+        Scanner s = new Scanner(System.in);
+        System.out.print(MathChallenge(s.nextInt())); // But if you want ot success in coderbte you need to chance s.nextLine()
     }
 }
 

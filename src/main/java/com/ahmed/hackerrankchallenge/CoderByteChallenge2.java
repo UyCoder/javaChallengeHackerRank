@@ -12,38 +12,27 @@ import java.util.Scanner;
  * CreatedWith: IntelliJ IDEA
  */
 public class CoderByteChallenge2{
-    public static void main(String[] args)
-    {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the size of the two arrays");
-        int size = scan.nextInt();
-        int [] array1 = new int[size];
-        int [] array2 = new int[size];
-        int [] result = new int[size];
-
-        System.out.println("Enter the elements of array 1");
-
-        for (int i = 0; i < size; i++)
-        {
-            array1[i] = scan.nextInt();
-        }
-
-        System.out.println("Enter the elements of array 2");
-
-        for (int i = 0; i < size; i++)
-        {
-            array2[i] = scan.nextInt();
-        }
-
-        for (int i = 0; i < size; i++)
-        {
-            result[i] = array1[i]+array2[i];
-        }
-
-        System.out.println("Sum of elements of array1 and array2");
-        for (int i = 0; i < size; i++)
-        {
-            System.out.print(result[i]+" ");
-        }
-    }
+//
+//        public String ArrayMatching(strArr) {
+//
+//            array1 = new Array(),
+//                    array2 = new Array(),
+//                    arrayMatching = new String("");
+//        if(strArr[0].length > strArr[1].length){
+//            array1 = strArr[0].slice(1).slice(0, array1.length-1);
+//            array2 = strArr[1].slice(1).slice(0, array2.length-1);
+//        }
+//        else {
+//            array1 = strArr[1].slice(1).slice(0, array1.length-1);
+//            array2 = strArr[0].slice(1).slice(0, array2.length-1);
+//        }
+//        array1 = JSON.parse("[" + array1 + "]"), array2 = JSON.parse("[" + array2 + "]");
+//        for(let i=0; i<array1.length; i++) arrayMatching += (array1[i] + (array2[i]?array2[i]:0)) + "-";
+//        return String;
+//}
+//    public static void main(String[] args){
+//        Scanner scan = new Scanner(System.in);
+//        String output = scan.nextLine();
+//        System.out.println(ArrayMatching(output));
+//    }
 }
