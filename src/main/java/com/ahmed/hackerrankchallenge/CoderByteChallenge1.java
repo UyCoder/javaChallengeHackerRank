@@ -12,6 +12,41 @@ import java.util.regex.Pattern;
  * Email:       AhmedBughra@gmail.com
  * CreatedWith: IntelliJ IDEA
  */
-public class CoderByteChallenge1 { public static void main(String[] args) {
+public class CoderByteChallenge1 {
+    // First method to convert String to Camel case, But with first letter uppercase
+            public static String convertToCamelCase(String value) {
+                StringBuilder returnValue = new StringBuilder();
+                String throwAwayChars = "()[]{}=?!.:,-_+*#~/%";
+                value = value.replaceAll("[" + Pattern.quote(throwAwayChars) + "]", " ");
+                value = value.toLowerCase();
+                boolean makeNextUppercase = true;
+                for (char c : value.toCharArray()) {
+                    if (Character.isSpaceChar(c) || Character.isWhitespace(c)) {
+                        makeNextUppercase = true;
+                    } else if (makeNextUppercase) {
+                        c = Character.toTitleCase(c);
+                        makeNextUppercase = false;
+                    }
+                    returnValue.append(c);
+                }
+                return returnValue.toString().replaceAll("\\s+", "");
+            }
+    // Second method will convert fisty letter to lower case
+    private static String firstCharToLowerCase(String str) {
+        if(str == null || str.length() == 0)
+            return "";
+        if(str.length() == 1)
+            return str.toLowerCase();
+        return str.substring(0, 1).toLowerCase() + str.substring(1);
+    }
+
+    // Main method here..
+    public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+        String s = firstCharToLowerCase(convertToCamelCase(scan.nextLine()));
+        System.out.println(s);
+        scan.close();
+    }
 }
-}
+
+
